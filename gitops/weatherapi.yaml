@@ -19,5 +19,5 @@ spec:
           ports:
             - containerPort: 80 # Change this to the desired port number
           imagePullPolicy: IfNotPresent
-  imagePullSecrets:
-    - name: acrhdhciintegration-secret
+      imagePullSecrets:
+        - name: acrhdhciintegration-secret
