@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: weatherapi-deployment
+  namespace: apiservices
+spec:
+  selector:
+    matchLabels:
+      app: weatherapi
+  replicas: 3 # Change this to the desired number of replicas
+  template:
+    metadata:
+      labels:
+        app: weatherapi
+    spec:
+      containers:
+        - name: weatherapi
+          image: acrhdhciintegration.azurecr.io/weatherapi:latest
+          ports:
+            - containerPort: 80 # Change this to the desired port number
