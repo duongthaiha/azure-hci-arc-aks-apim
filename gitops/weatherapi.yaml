@@ -32,7 +32,7 @@ spec:
     spec:
       containers:
         - name: weatherapi
-          image: acrhdhciintegration.azurecr.io/weatherapi:v1.2.4
+          image: acrhdhciintegration.azurecr.io/weatherapi:v1.2.5
           ports:
             - containerPort: 80 # Change this to the desired port number
           imagePullPolicy: IfNotPresent
